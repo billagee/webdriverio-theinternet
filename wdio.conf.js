@@ -37,15 +37,17 @@ exports.config = {
     // -- LOCAL --
     //  Uncomment the capabilities key below if you want to run locally.
 
-    //services: ['selenium-standalone'],
-    //capabilities: [{
-    //    browserName: 'chrome'
-    //}],
+    services: ['selenium-standalone'],
+    capabilities: [
+        { browserName: 'chrome' },
+        //{ browserName: 'firefox' }
+    ],
 
     // -- SAUCELABS --
     //  Uncomment the services, user, key & capabilities keys below if you want to run on Saucelabs.
 
 
+    /*
     services: ['sauce'],
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
@@ -70,6 +72,7 @@ exports.config = {
         platform: 'Windows 10'
     }
     ],
+    */
 
     //
     // ===================
